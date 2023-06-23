@@ -47,8 +47,8 @@ class _MapViewState extends State<MapView> {
       }
   );
 
-  late PlaceDetails _departure;
-  late PlaceDetails _arrival;
+  late PlaceDetails _departure = PlaceDetails(name: '', placeId: '');
+  late PlaceDetails _arrival = PlaceDetails(name: '', placeId: '');
 
   void onMapCreated(controller) {
     setState(() {
